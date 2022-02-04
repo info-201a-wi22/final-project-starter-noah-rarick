@@ -25,7 +25,7 @@ Analyzing the relationship between reported sleep quality and levels of depressi
 ### *Authors*
 1. Noah Rarick noah.rarick@gmail.com
 2. Vincent Chen vchen5@uw.edu
-3. Qiyuan Pan 2733893550@qq.com
+3. Qiyuan Pan qiyuap@uw.edu
 4. Wenyu Jiao 
 
 #### *Affiliation*
