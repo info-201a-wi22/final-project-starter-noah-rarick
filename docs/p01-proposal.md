@@ -60,10 +60,18 @@ _Sleep_Project_ is hoping to provide insight to students on how sleep can positi
     For all mental health statistics, the HADS questionnaire was used. This is an extremely common questionnaire to assess the mental status of subjects. All the sleep data was obtained through the "Karolinska Sleep Questionnaire" which asks participants to self-report things such as wakeup times, sleep times, nap times, sleep quality, and even levels of panic/worry. Participant background information such as contraceptive status, BMI, height and age are all included. 
     All participants were asked to complete the Brown ADD questionnaire, 5 Personality Trait questionnaire and more to provide background on each participant and note any confounding factors that may affect sleep quality.
 
+<<<<<<< HEAD
  #### Notes on Collected Data
     The data set includes an incredible amount of information on each participant, providing a whole background on what lifestyle they may be living and what factors may affect their sleep. With so many data points, it may be difficult to find trends directly relating sleep to anxiety/depression as there are hundreds of confounding factors that the researchers collected. 
     #### Participant Pool
     The participant pool are residents of Sweden with varying ages, sexes, backgrounds and education status. From the data, there is a very wide assortment of participants. 
+=======
+#### Notes on Collected Data
+    The data set includes an incredible amount of information on each participant, providing a whole background on what lifestyle they may be living and what factors may effect their sleep. With so many data points, it may be difficult to find trends directly relating sleep to anxiety/depression as there are hundreds of confounding factors that the researchers collected. 
+#### Participant Pool
+    The participant pool are residents of Sweden with varying ages, sexes, backgrounds and education status. From the data it is clear that there is a very wide assortment of participants. 
+
+>>>>>>> c2b65b281e9d942d05ddb2164fa47b6d31f7c23e
 
 ### *Implications*
 Upon adequately conveying the correlation between an individual’s sleep quality and influence on various aspects in regards to health and mental well-being, some expected implications that may arise for technologists and designers derive from the fact that information technology such as social media, phones and other various forms of digital mediums are driving factors in promoting poor sleep quality amongst  younger populations, as noted in the article “#Sleepyteens: Social media use in adolescence is associated with poor sleep quality, anxiety, depression, and low self-esteem,” in which Woods and Scott allude to how variables such as “Nighttime-specific social media use,” “Emotional investment in social media” displayed a notable significance in influencing an individual’s self-esteem, anxiety, and depression, as denoted by data collected in their study. The means and standard deviations draw attention to how “poorer sleep quality” was associated with “nighttime-specific social media use,” with a correlation coefficient r = .34, p <.001, providing a strong association between poor sleep quality and nighttime-specific social media use. While also linking an association between poor sleep quality on mental well-being, with (Woods & Scott, 2016, p.42). This sentiment may implicate technologists and designers as it may prompt necessary reforms in the ways in which social media usage is deployed to consumers and require systematic changes to apps limiting over-consumption possibilities. 
