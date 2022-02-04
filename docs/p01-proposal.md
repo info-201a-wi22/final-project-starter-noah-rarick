@@ -77,9 +77,9 @@ _Sleep_Project_ is hoping to provide insight to students on how sleep can positi
     For all mental health statistics the HADS questionairre was used. This is an extremely common questionaire to assess the mental status of subjects. All the sleep data was obtained through the "Karolinska Sleep Questionnaire" which asks participants to self report things such as wakeup times, sleep times, nap times, sleep quality, and even levels of panic/worry. Participant background information such as conctraceptive status, BMI, height and age are all included. 
     All participants were asked to complete the Brown ADD questionnaire, 5 Personality Trait questionnaire and more to provide background on each participant and note any confounding factors that may effect sleep quality.
 
- #### Notes on Collected Data
+#### Notes on Collected Data
     The data set includes an incredible amount of information on each participant, providing a whole background on what lifestyle they may be living and what factors may effect their sleep. With so many data points, it may be difficult to find trends directly relating sleep to anxiety/depression as there are hundreds of confounding factors that the researchers collected. 
-    #### Participant Pool
+#### Participant Pool
     The participant pool are residents of Sweden with varying ages, sexes, backgrounds and education status. From the data it is clear that there is a very wide assortment of participants. 
 
 
