@@ -1,0 +1,106 @@
+id				participant id, generated at random in 9000-9100 range
+Sex 				self-rated by participant, male/female
+AgeGroup			Young: 20-30 years old at time of experiment, inclusive. Old: 65-75 years old at time of experiment, inclusive.
+BMI1				Body Mass Index, session 1
+BMI2				Body Mass Index, session 2
+EducationLevel	 		self-rated by participant, Har avslutat grundskolan = finished primary school, Har avslutat gymnasieskolan = finished secondary school, Studerar för nävarande på universitet/högskola = Student at university, Har examen från universitet/högskola = Has degree from university
+HADS_Anxiety 			Hospital Anxiety and Depression scale, Anxiety subscale
+HADS_Depression 		Hospital Anxiety and Depression scale, Depression subscale      
+ISI 				Insomnia Severity Index
+KSQ_SleepQualityIndex 		Karolinska Sleep Questionnaire, SleepQualityIndex            
+KSQ_WakeupSymptomIndex	 	Karolinska Sleep Questionnaire, WakeupSymptomIndex
+KSQ_SnoringSymptomIndex 	Karolinska Sleep Questionnaire, SnoringSymptomIndex              
+KSQ_SleepSymptomIndex 		Karolinska Sleep Questionnaire, SleepSymptomIndex
+KSQ_WeekdayBedTime 		Karolinska Sleep Questionnaire, WeekdayBedTime
+KSQ_WeekendBedTime 		Karolinska Sleep Questionnaire, WeekendBedTime
+KSQ_WeekdayRiseTime 		Karolinska Sleep Questionnaire, WeekdayRiseTime
+KSQ_WeekendRiseTime 		Karolinska Sleep Questionnaire, WeekendRiseTime
+KSQ_NapFrequency 		Karolinska Sleep Questionnaire, NapFrequency
+KSQ_NapDuration 		Karolinska Sleep Questionnaire, NapDuration
+KSQ_ConcernDisturbedSleep 	Karolinska Sleep Questionnaire, ConcernDisturbedSleep
+KSQ_Panic 			Karolinska Sleep Questionnaire, Panic
+KSQ_Worry 			Karolinska Sleep Questionnaire, Worry
+KSQ_CompensatoryMorningSleep 	Karolinska Sleep Questionnaire, CompensatoryMorningSleep
+KSQ_ConcernFatigue 		Karolinska Sleep Questionnaire, ConcernFatigue
+KSQ_EnoughSleep 		Karolinska Sleep Questionnaire, EnoughSleep
+KSQ_HealthProblem 		Karolinska Sleep Questionnaire, HealthProblem
+KSQ_TotalSleepRequirement 	Karolinska Sleep Questionnaire, TotalSleepRequirement
+KSQ_OverallSleepQuality 	Karolinska Sleep Questionnaire, OverallSleepQuality
+KSQ_MorningOrEveningPerson 	Karolinska Sleep Questionnaire, MorningOrEveningPerson
+IRI_EC	 			Interpersonal Reactivity Index, Empathic Concern subscale
+IRI_PT	 			Interpersonal Reactivity Index, Perspective Taking subscale
+IRI_PD	 			Interpersonal Reactivity Index, Personal Distress subscale
+IRI_F 				Interpersonal Reactivity Index, Fantasy subscale
+TAS20_Total 			Toronto Alexithymia Scale-20, total score
+TAS20_DIF 			Toronto Alexithymia Scale-20, Difficulty Identifying Feelings subscale
+TAS20_DDF 			Toronto Alexithymia Scale-20, Difficulty Describing Feelings subscale
+TAS20_EOT 			Toronto Alexithymia Scale-20, Externally Oriented Thinking subscale
+STAI_T	 			State-Trait Anxiety Inventory, Trait subscale
+BFI_Extraversion 		Big Five Inventory, Extraversion subscale
+BFI_Agreeableness 		Big Five Inventory, Agreeableness subscale
+BFI_Conscientiousness 		Big Five Inventory, Conscientiousness subscale
+BFI_Neuroticism 		Big Five Inventory, Neuroticism subscale
+BFI_Openness 			Big Five Inventory, Openness subscale
+PANAS_Positive	 		Positive and Negative Affect Scale, Positive
+PANAS_Negative	 		Positive and Negative Affect Scale, Negative
+PSS14 				Perceived Stress Scale-14
+SelfRatedHealth 		Self-rated health right now, 7-point scale
+SRH5 				Self-rated health in general, 5-point scale
+ESS 				Epworth Sleepiness Scale
+SicknessQ			Sickness-Q scale
+ECS 				Emotional Contagion Scale
+BIS11_Total			Barratt Impulsiveness Scale-11, total score
+BIS11_Attentional		Barratt Impulsiveness Scale-11, Attentional factor
+BIS11_Motor			Barratt Impulsiveness Scale-11, Motor factor
+BIS11_Nonplanning		Barratt Impulsiveness Scale-11, Nonplanning factor
+MenstrualPhaseSession1		determined by participants' self-reported dates for last menstruation if applicable
+MenstrualPhaseSession2		determined by participants' self-reported dates for last menstruation if applicable
+SleepDeprivedSession1		experimenter's guess about participant's condition, for validation of blinding
+SleepDeprivedSession2		experimenter's guess about participant's condition, for validation of blinding
+EverBeenInStudyBefore		whether participant has been in fMRI or experimental psychology experiment before, self-report yes/no
+MMSE				Mini Mental State Exam, score
+SawThroughEMGElectrodes		Whether participant realised that electrodes on face were for EMG
+SawThroughZPG			Whether participant realised that opponents in Zürich Prosocial Game were not real
+TestTimeType_1			Early (approx. 18:00) or late (approx. 20:00) scan session
+TestTimeType_2			Early (approx. 18:00) or late (approx. 20:00) scan session
+Contraceptives			Self-reported use of female sex hormones. Minipills = progestogen-only oral contraceptive pills, Combined = combined oral contraceptive pills, P-stav = contraceptive implant, Estrogen = oral estrogen supplementation after menopause, Local estrogen = local estrogen supplementation after menopause
+OtherDrugs			Self-reported use of any other drugs. Coded in Swedish. Proprietary drug names can be looked up e.g. on fass.se to find the active substance.
+GeneralImpression1		Participants' self-reported general impression of the experiment session 1, reported in Swedish and coded in English by the experimenter
+GeneralImpression2		Participants' self-reported general impression of the experiment session 2, reported in Swedish and coded in English by the experimenter
+PVTEffort1			Rated effort during Psychomotor Vigilance Test session 1, 1-5
+PVTEffort2			Rated effort during Psychomotor Vigilance Test session 2, 1-5
+PVTMotivation1			Rated motivation during Psychomotor Vigilance Test session 2, 1-5
+PVTMotivation1.1		Rated motivation during Psychomotor Vigilance Test session 2, 1-5
+FellAsleepSession1		Self-report of whether participants fell asleep during scanning, session 1
+FellAsleepSession2		Self-report of whether participants fell asleep during scanning, session 2
+StrategyARROWS			Self-reported strategy for cognitive reappraisal, coded by experimenter in English
+SelfRatedHealth_byScanner.x	Self-rated health right now, 7-point scale, acquired at scanning session 1
+SRH5_byScanner.x		Self-rated health in general, 5-point scale, acquired at scanning session 1
+PANAS_Positive_byScanner.x	Positive and Negative Affect Scale, Positive, acquired at scanning session 1
+PANAS_Negative_byScanner.x	Positive and Negative Affect Scale, Negative, acquired at scanning session 1
+SicknessQ_byScanner.x		Sickness-Q scale, acquired at session 1
+SelfRatedHealth_byScanner.y	Self-rated health right now, 7-point scale, acquired at scanning session 2
+SRH5_byScanner.y		Self-rated health in general, 5-point scale, acquired at scanning session 2
+PANAS_Positive_byScanner.y	Positive and Negative Affect Scale, Positive, acquired at scanning session 2
+PANAS_Negative_byScanner.y	Positive and Negative Affect Scale, Negative, acquired at scanning session 2
+SicknessQ_byScanner.y		Sickness-Q scale, acquired at session 2
+PPIR_ME				Psychopathic Personality Inventory-Revised, Machiavellian Egocentricity subscale
+PPIR_RN				Psychopathic Personality Inventory-Revised, Rebellious Nonconformity subscale
+PPIR_BE				Psychopathic Personality Inventory-Revised, Blame Externalization subscale
+PPIR_CN				Psychopathic Personality Inventory-Revised, Careless Nonplanfulness subscale
+PPIR_SOI			Psychopathic Personality Inventory-Revised, Social Influence subscale
+PPIR_FE				Psychopathic Personality Inventory-Revised, Fearlessness subscale
+PPIR_STI			Psychopathic Personality Inventory-Revised, Stress Immunity subscale
+PPIR_C				Psychopathic Personality Inventory-Revised, Coldheartedness subscale
+PPIR_VR				Psychopathic Personality Inventory-Revised, Virtuous Responding subscale
+PPIR_DR				Psychopathic Personality Inventory-Revised, Deviant Responding subscale
+PPIR_IR15			Psychopathic Personality Inventory-Revised, Inconsistent Responding-15 subscale
+PPIR_IR40			Psychopathic Personality Inventory-Revised, Inconsistent Responding-40 subscale
+BADD_Total			Brown ADD scales, total score
+BADD_Activation			Brown ADD scales, Activation subscale
+BADD_Attention			Brown ADD scales, Attention subscale
+BADD_Effort			Brown ADD scales, Effort subscale
+BADD_Affect			Brown ADD scales, Affect subscale
+BADD_Memory			Brown ADD scales, Memory subscale
+Sl_cond				Sleep randomisation condition. 1 = sleep deprivation before first session, 2 = sleep deprivation before second session
+Trial				Trial counterbalancing condition governing event order in trial lists during fMRI experiments
