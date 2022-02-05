@@ -8,7 +8,7 @@ Analyzing the relationship between reported sleep quality and levels of depressi
 ### *Authors*
 1. Noah Rarick noah.rarick@gmail.com
 2. Vincent Chen vchen5@uw.edu
-3. Qiyuan Pan 2733893550@qq.com
+3. Qiyuan Pan qiyuap@uw.edu
 4. Wenyu Jiao wenyuj2@uw.edu
 
 #### *Affiliation*
@@ -60,7 +60,7 @@ Our data set is from Kaggle, produced from a Swedish study that unfortunately we
 For all mental health statistics, the HADS questionnaire was used. This is an extremely common questionnaire to assess the mental status of subjects. All the sleep data was obtained through the "Karolinska Sleep Questionnaire" which asks participants to self-report things such as wakeup times, sleep times, nap times, sleep quality, and even levels of panic/worry. Participant background information such as contraceptive status, BMI, height and age are all included. 
 All participants were asked to complete the Brown ADD questionnaire, 5 Personality Trait questionnaire and more to provide background on each participant and note any confounding factors that may affect sleep quality.
 
- #### Notes on Collected Data
+#### Notes on Collected Data
 The data set includes an incredible amount of information on each participant, providing a whole background on what lifestyle they may be living and what factors may affect their sleep. With so many data points, it may be difficult to find trends directly relating sleep to anxiety/depression as there are hundreds of confounding factors that the researchers collected. 
 
 #### Participant Pool
