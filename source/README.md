@@ -5,7 +5,8 @@ these sub-directories (TODO: Update/Delete)
 
 |Source Directories | Brief Description|
 |---------------| -----------------|
-|[xxx](./xxx) | Description ... 
+|[Chart_1]("./source/Chart_1") | The implementation of the grouped dodged column bar chart data visualization is a means of illustrating the correlation between an individual’s sleep quality and reported level of depression. By grouping the data based on age group (Young versus Old versus NA), the data visualization showcases the deviation among the specified features. From the chart, we can see that as sleep quality diminishes (increases in value), young individuals are more prone to experiencing higher levels of depression, while depression levels remain fairly consistent across different sleep quality values for old individuals. 
+ 
 |[xxx](./xxx) | Description ... 
 
 
