@@ -5,7 +5,7 @@ these sub-directories (TODO: Update/Delete)
 
 |Source Directories | Brief Description|
 |---------------| -----------------|
-|[xxx](./xxx) | Description ... 
+|[xxx](./chart_3) | This graph is about the show the relationship between people's sleeping quality and they anxiety they have. Also, people are grouped by different age. So that people can see how the old and young people's sleep quality data will be affected by their anxiety point. The graph has reveal that young people are more likely to be affected by anxiety level since they will have a larger range of anxiety level when sleep quality differ. 
 |[xxx](./xxx) | Description ... 
 
 
