@@ -1,10 +1,13 @@
 library("ggplot2")
 library("dplyr")
-setwd("~/_Code/final-project-starter-noah-rarick/source")
+library("plotly")
+
+
 data <-read.csv("../data/sleepdata.csv")
 
-a <- ggplot(data, aes(x = KSQ_SleepQualityIndex, y = HADS_Anxiety, colour=AgeGroup),position = "dodge")+
-  geom_boxplot()+
+scatter <- ggplot(data, aes(x = KSQ_SleepQualityIndex, y = HADS_Anxiety, colour=AgeGroup),position = "dodge")+
+  geom_point()+
   ggtitle("the relationship between sleep quality and anxiety that on different agegroup") +
   xlab("KSQ_SleepQualityIndex") + ylab("HADS_Anxiety")
-a
+scatter
+ggplotly(scatter)
