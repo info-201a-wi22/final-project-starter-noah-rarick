@@ -164,7 +164,7 @@ summary(cars)
 setwd("~/_Code/final-project-starter-noah-rarick/docs")
 source("../source/chart_3/chart_final.R")
 library("ggplot2")
-plot(a)
+plot(scatter)
 ```
 ### Chart 3 Summary:
 This graph is about the show the relationship between people's sleeping quality and they anxiety they have. The graph is a scatter plot and will show how each point which representing a different age group are displayed.The age group are young, old and NA.So people can see how the old and young people's sleep quality data will be affected by their anxiety point. The graph has reveal that young people are more likely to be affected by anxiety level since they will have a larger range and spread out in the graph. The young people is are more likely to appear at the high level of anxiety and high sleep quality index while the old people is more likely to appear at low level for both level. 
