@@ -2,7 +2,7 @@ library("ggplot2")
 library("dplyr")
 library("tidyr")
 library("plotly")
-setwd("~/Documents/INFO_201_Project/final-project-starter-noah-rarick/source/Chart_1")
+setwd("~/Documents/_Code/final-project-starter-noah-rarick/source/Chart_1")
 sleep_data <- read.csv("../../data/sleepdata.csv")
 View(sleep_data)
  
