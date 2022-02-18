@@ -9,8 +9,8 @@ View(sleep_data)
  getwd()
   
   sleep_depression_age <- sleep_data %>% 
-  select(id, AgeGroup, HADS_Depression, KSQ_SleepQualityIndex) %>%
-  gather(key = Age, value = KSQ_SleepQualityIndex)
+  select(id, AgeGroup, HADS_Depression, KSQ_SleepQualityIndex) 
+  
 
 
 sleep_depression_age_plot <- ggplot(sleep_depression_age) +
