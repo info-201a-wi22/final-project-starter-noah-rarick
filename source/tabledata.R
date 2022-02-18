@@ -7,6 +7,7 @@ sleep_table <- sleep_data %>%
                summarize(avg_depression = mean(HADS_Depression),
                avg_sleep_quality = mean(KSQ_SleepQualityIndex),
                avg_anxiety = mean(HADS_Anxiety))
+sleep_table = sleep_table[-5,]
                
                
 View(sleep_table)
