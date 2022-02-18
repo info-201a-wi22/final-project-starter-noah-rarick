@@ -2,9 +2,11 @@ library("ggplot2")
 library("dplyr")
 library("tidyr")
 library("plotly")
-
-sleep_data <- read.csv("../data/sleepdata.csv")
+setwd("~/Documents/INFO_201_Project/final-project-starter-noah-rarick/source/Chart_1")
+sleep_data <- read.csv("../../data/sleepdata.csv")
 View(sleep_data)
+ 
+ getwd()
   
   sleep_depression_age <- sleep_data %>% 
   select(id, AgeGroup, HADS_Depression, KSQ_SleepQualityIndex) %>%
