@@ -1,6 +1,6 @@
 library("ggplot2")
 library("dplyr")
-setwd("~/Documents/final-project-starter-noah-rarick/source/")
+
 data <-read.csv("../data/sleepdata.csv")
 
 scatter <- ggplot(data, aes(x = KSQ_SleepQualityIndex, y = HADS_Anxiety, colour=AgeGroup),position = "dodge")+
