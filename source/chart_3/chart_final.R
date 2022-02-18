@@ -1,7 +1,7 @@
 library("ggplot2")
 library("dplyr")
-
-data <-read.csv("sleepdata.csv")
+setwd("~/_Code/final-project-starter-noah-rarick/source")
+data <-read.csv("../data/sleepdata.csv")
 
 a <- ggplot(data, aes(x = KSQ_SleepQualityIndex, y = HADS_Anxiety, colour=AgeGroup),position = "dodge")+
   geom_boxplot()+
