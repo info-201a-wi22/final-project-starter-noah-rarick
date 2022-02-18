@@ -3,7 +3,7 @@ library("dplyr")
 library("tidyr")
 library("plotly")
 getwd()
-sleep_data <- read.csv("../data/sleepdata.csv")
+sleep_data <- read.csv("../../data/sleepdata.csv")
 View(sleep_data)
  
  getwd()
