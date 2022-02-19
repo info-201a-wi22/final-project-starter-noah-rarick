@@ -63,9 +63,13 @@ Similarly, research in “#Sleepyteens” found links between social media use a
 
 ### *The Dataset*
 [Sleep Quality Data](https://www.kaggle.com/feraco/sleep-deprivation?select=demdata_160225_pseudonymized.csv)
+(https://data.world/kmpearson/experiment/workspace/file?filename=Fitbit+Experiment.csv)
 #### Origin and Size
 Our data set is from Kaggle, produced from a Swedish study that unfortunately we cannot find the origin/publishers of. The data set has 106 columns for 91 participants and the elements that are researched range from HADS anxiety scores to sleep quality metrics to BMI and even participant info such as education level. 
-
+The second data set is from "data.world". It is a monthly experiment based on
+a person's daily exercises. And the outcome is the daily sleep quality of this 
+person. We used this dataset for figuring out how will exercise affect people's
+sleep quality.
 #### Research Methods
 For all mental health statistics, the HADS questionnaire was used. This is an extremely common questionnaire to assess the mental status of subjects. All the sleep data was obtained through the "Karolinska Sleep Questionnaire" which asks participants to self-report things such as wakeup times, sleep times, nap times, sleep quality, and even levels of panic/worry. Participant background information such as contraceptive status, BMI, height and age are all included. 
 All participants were asked to complete the Brown ADD questionnaire, 5 Personality Trait questionnaire and more to provide background on each participant and note any confounding factors that may affect sleep quality.
@@ -156,9 +160,5 @@ ggplotly(scatter)
 
 This graph is about the show the relationship between people's sleeping quality and they anxiety they have. The graph is a scatter plot and will show how each point which representing a different age group are displayed.The age group are young, old and NA.So people can see how the old and young people's sleep quality data will be affected by their anxiety point. The graph has reveal that young people are more likely to be affected by anxiety level since they will have a larger range and spread out in the graph. The young people is are more likely to appear at the high level of anxiety and high sleep quality index while the old people is more likely to appear at low level for both level. 
 
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
