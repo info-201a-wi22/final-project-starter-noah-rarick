@@ -3,7 +3,9 @@ library("dplyr")
 library("tidyr")
 library("plotly")
 
-sleep_data <- read.csv("../../data/sleepdata.csv")
+here <- getwd()
+setwd(here)
+sleep_data <- read.csv("../data/sleepdata.csv")
 
 sleep_depression_age <- sleep_data %>%
   select(
@@ -21,3 +23,4 @@ sleep_depression_age_plot <- ggplot(sleep_depression_age) +
   )
 
 ggplotly(sleep_depression_age_plot)
+
