@@ -2,8 +2,9 @@ library("ggplot2")
 library("dplyr")
 library("plotly")
 
-
-data <-read.csv("../../data/sleepdata.csv")
+here <- getwd()
+setwd(here)
+data <-read.csv("../data/sleepdata.csv")
 
 scatter <- ggplot(data, aes(x = KSQ_SleepQualityIndex, y = HADS_Anxiety, colour=AgeGroup),position = "dodge")+
   geom_point()+
