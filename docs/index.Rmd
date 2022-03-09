@@ -113,25 +113,26 @@ sleep_table <- sleep_data %>%
                avg_anxiety = mean(HADS_Anxiety))
 
 sleep_table = sleep_table[-5,]
-# sleep_table %>% mutate_at(vars(avg_depression, avg_sleep_quality, avg_anxiety), funs(round(., 2)))
+sleep_table <- sleep_table %>% mutate_at(vars(avg_depression, avg_sleep_quality, avg_anxiety), funs(round(., 2)))
 table <- kable(sleep_table)
 table
 ```
 
 ### **Table Summary**
 
-The table above displays several statistics extracted from our data set. Firstly, it was decided that the most important factors to group by were age range and sex. By doing this, we could average the depression, anxiety and sleep quality scores for each group. The most important observation to take away is that while the group old males had the highest sleep quality, they also had the highest depression scores. Additionally, while old females had the lowest sleep quality, they had the lowest depression scores.Both young males and females had the highest anxiety scores, much higher than that of old females who had worse sleep quality. From this chart, it is hard to draw a relationship between sleep quality and depression and anxiety scores. 
+The table above displays several statistics extracted from our data set. Firstly, it was decided that the most important factors to group by were age range and sex. By doing this, we could average the depression, anxiety and sleep quality scores for each group. The most important observation to take away is that while the group old males had the highest sleep quality, they also had the highest depression scores. Additionally, while old females had the lowest sleep quality, they had the lowest depression scores.Both young males and females had the highest anxiety scores, much higher than that of old females who had worse sleep quality. From this chart, it is hard to draw a relationship between sleep quality and depression and anxiety scores.
 
-```{r summary statistics, echo = FALSE}
+
+```{r summary statistics, echo = FALSE, warning=FALSE, message=FALSE,include = FALSE}
 source("../source/summaryfunction.R")
 summary_info
 ```
 ### **Statistic Summary**
 
-The above summary statistics help to quantify important relationships between sleep quality, depression and anxiety."Below average" and "above average" refers to whether or not the user was above or below the average sleep quality index. From this data it is much easier to draw a correlation between sleep quality and depression/anxiety. Participants with below average sleep quality had a HADS depression score of approximately 1.49, however participants with above average sleep quality had a HADS depression score of approximately .95. The same relationship can be seen in the HADS anxiety scores. Participants with below average sleep quality had a HADS anxiety score of 2.91, however participants with above average sleep quality had a HADS anxiety score of 1.90. From this data we can see that participants that had below average sleep quality also suffered from depression and anxiety at higher scores. The final two statistics I calculated was depression between the age ranges. I calculated the mean depression scores for those classified as young, coming out to 1.15. However, participants classified as old had a very similar average depression score of 1.17. From these statistics it seems as though sleep quality affected depression/anxiety much more than age.   
+The above summary statistics help to quantify important relationships between sleep quality, depression and anxiety."Below average" and "above average" refers to whether or not the user was above or below the average sleep quality index. From this data it is much easier to draw a correlation between sleep quality and depression/anxiety. Participants with below average sleep quality had a HADS depression score of approximately 1.49, however participants with above average sleep quality had a HADS depression score of approximately .95. The same relationship can be seen in the HADS anxiety scores. Participants with below average sleep quality had a HADS anxiety score of 2.91, however participants with above average sleep quality had a HADS anxiety score of 1.90. From this data we can see that participants that had below average sleep quality also suffered from depression and anxiety at higher scores. The final two statistics I calculated was depression between the age ranges. I calculated the mean depression scores for those classified as young, coming out to 1.15. However, participants classified as old had a very similar average depression score of 1.17. From these statistics it seems as though sleep quality affected depression/anxiety much more than age. 
 
 ## Including Plots
-```{r chart 1, echo = FALSE}
+```{r chart 1,echo = FALSE, warning=FALSE, message=FALSE}
 source("../source/Chart_1/Data_Visualization_1.R")
 library("ggplot2")
 ggplotly(sleep_depression_age_plot)
@@ -141,7 +142,7 @@ ggplotly(sleep_depression_age_plot)
 
 The implementation of the grouped dodged column bar chart data visualization is a means of illustrating the correlation between an individual’s sleep quality and reported level of depression. By grouping the data based on age group (Young versus Old versus NA), the data visualization showcases the deviation among the specified features. From the chart, we can see that as sleep quality diminishes (increases in value), young individuals are more prone to experiencing higher levels of depression, while depression levels remain fairly consistent across different sleep quality values for old individuals.
 
-```{r chart 2, echo = FALSE}
+```{r chart 2,echo = FALSE, warning=FALSE, message=FALSE}
 source("../source/chart_2/Column_Chart-Sleep_Quality.R")
 library("ggplot2")
 g1
@@ -151,7 +152,7 @@ g1
 
 The implementation of the line chart data visualization is trying to prove the relationship between the amount of exercises and sleep quality. From the chart, we can see that when the daily calories start to increase, the minutes this person spent in deep sleep or regular sleep will be unstable. From my case, I don't see direct effects to sleep quality from increasing volume of doing exercises. But the minutes of deep sleep and minutes of staying asleep is proportional. From the side of this person, we can get a conclusion that the amount of exercises won't affect the person's sleep quality.
 
-```{r chart 3, echo = FALSE}
+```{r chart 3,echo = FALSE, warning=FALSE, message=FALSE}
 source("../source/chart_3/chart_final.R")
 library("ggplot2")
 hist
