@@ -6,15 +6,12 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = TRUE)
 ```
 
-<<<<<<< HEAD
-###_Sleep_Project_
-=======
 ### *_Sleep_Project_*
->>>>>>> 4e15b520865929da4bbd38b39a83a4b4d3c05db2
 
+### *Title*
 Analyzing the relationship between reported sleep quality and levels of depression, anxiety and participant health data.
 
 ### *Authors*
@@ -155,13 +152,8 @@ g1
 
 The implementation of the line chart data visualization is trying to prove the relationship between the amount of exercises and sleep quality. From the chart, we can see that when the daily calories start to increase, the minutes this person spent in deep sleep or regular sleep will be unstable. From my case, I don't see direct effects to sleep quality from increasing volume of doing exercises. But the minutes of deep sleep and minutes of staying asleep is proportional. From the side of this person, we can get a conclusion that the amount of exercises won't affect the person's sleep quality.
 
-<<<<<<< HEAD
-```{r chart 3, echo = FALSE}
-source("../source/Chart_1/Data_Visualization_1.R")
-=======
 ```{r chart 3,echo = FALSE, warning=FALSE, message=FALSE}
 source("../source/chart_3/chart_final.R")
->>>>>>> 4e15b520865929da4bbd38b39a83a4b4d3c05db2
 library("ggplot2")
 hist
 ```
@@ -169,3 +161,17 @@ hist
 ### Chart 3 Summary:
 
 This graph is about the show the relationship between people's sleeping quality and they anxiety they have. The graph is a scatter plot and will show how each point which representing a different age group are displayed.The age group are young, old and NA.So people can see how the old and young people's sleep quality data will be affected by their anxiety point. The graph has reveal that young people are more likely to be affected by anxiety level since they will have a larger range and spread out in the graph. The young people is are more likely to appear at the high level of anxiety and high sleep quality index while the old people is more likely to appear at low level for both level. 
+
+### *Findings*
+Based on the dataset and analysis we did in the second part. We simply choose the most important factors that might affect sleep quality are the age range and sex. The first research question we are trying to resolve is the relationship between anxiety and sleep quality. And from the data we searched, we found that the group of old males had the highest sleep quality, they also had the highest depression scores. Additionally, while old females had the lowest sleep quality, they had the lowest depression scores. Both young males and females had the highest anxiety scores, much higher than that of old females who had worse sleep quality.
+And for the relationship between HADS depression scores and low, medium, and high sleep quality. We found that Participants with below-average sleep quality had a HADS depression score of approximately 1.49, however, participants with above-average sleep quality had a HADS depression score of approximately .95. The same relationship can be seen in the HADS anxiety scores. Participants with below-average sleep quality had a HADS anxiety score of 2.91, however, participants with above-average sleep quality had a HADS anxiety score of 1.90. From this data, we can see that participants that had below-average sleep quality also suffered from depression and anxiety at higher scores. The final two statistics I calculated were depression between the age ranges. I calculated the mean depression scores for those classified as young, coming out to 1.15. However, participants classified as old had a very similar average depression score of 1.17. From these statistics, it seems as though sleep quality affects depression/anxiety much more than age.
+On the first and third charts we made, we are trying to find how sleep quality changes through the different age ranges? 
+We can see that as sleep quality diminishes, young individuals are more prone to experiencing higher levels of depression, while depression levels remain fairly consistent across different sleep quality values for old individuals. They also revealed that young people are more likely to be affected by anxiety levels since they will have a larger range and spread out in the graph. Young people are more likely to appear at a high level of anxiety and high sleep quality index while old people are more likely to appear at a low level for both levels.
+The final research question we figure out is the relationship between exercise and sleep quality. In the second chart, we use the implementation of the line chart data visualization to see the relationship between the amount of exercise and sleep quality. From the chart, we can see that when the daily calories start to increase, the minutes this person spends in deep sleep or regular sleep will be unstable. From my case, I don’t see direct effects to sleep quality from the increasing volume of doing exercises. But the minutes of deep sleep and minutes of staying asleep are proportional. From the side of this person, we can get the conclusion that the number of exercises won’t affect the person’s sleep quality.
+
+### *Discussion*
+Sleep quality is very important. Because sleep heals and repairs the body that performs heavy daily functions during the day. Think of your body as a car that runs 16 hours during the day and can't keep running all the time in order to get back to normal. At the same time, sleep can also reduce the risk of disease. Sleep itself is a protective factor against disease. When people get too much or too little sleep, there is an increased risk of various diseases (such as heart disease and diabetes) and premature death. Sleep allows disease-causing cells to repair themselves. Sleep enhances creativity and cognitive function, the latter refers to people's mental abilities to learn, think, reason, remember, solve problems, make decisions and concentrate. Memories are reactivated during sleep, connections between brain cells are strengthened, and short-term memories are converted into long-term memories. Without enough quality sleep, people become forgetful.
+Because of this, sleep quality is so important, and people should look for what is affecting sleep quality. Anxiety level and depression level are just a few aspects that people need to pay attention to. Functional connections exist between areas of the brain associated with short-term memory, self-awareness, and negative emotions. This functional connection allows people with depression to indulge in negative thoughts and can lead to poor sleep quality. Depression and sleep problems often go hand in hand. About 75% of people with depression report significant sleep disturbances, such as difficulty falling asleep and not getting enough sleep time (insomnia). People with insomnia have a higher risk of depression and anxiety disorders than people who sleep normally. This shows that depression and insomnia will appear in combination. They are like a vicious cycle that will keep getting worse if not stopped. So this study is to show people what the anxiety level, depression level, and sleep quality of different people are like. This kind of display can intuitively tell people the connection between anxiety, depression, and sleep. I think this also promotes people to pay more attention to their sleep quality after seeing this kind of data. At the same time, people can have a general understanding of their current sleep status by looking for a classification that matches their own, and judging by the general trend of the classification and their actual situation. This awareness helps people spot the problem when it's small and correct it. This way people don't have a vicious cycle of depression and insomnia.
+
+### *Conclusion*
+At the end of the project, we found that when people are experiencing higher levels of depression, they are more likely to have lower sleep quality. And the age range’s effect on sleep quality is not remarkable. The factor that is more likely to affect sleep quality will be the anxiety level which can be presented by HADS anxiety scores. The higher anxiety scores you got, the worse sleep quality you will get. And we had no clue that sleep quality is related to daily calories burned(exercises level). So based on our research, we concluded that anxiety and depression will affect sleep quality. However, this conclusion can only represent a small number of people since the dataset is limited to 90 individuals from Germany and the age range is only from 20-30 and 65 to 75 years old.
