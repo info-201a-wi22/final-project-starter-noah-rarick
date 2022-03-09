@@ -8,7 +8,8 @@ library(tidyverse)
 library(lintr)
 library(styler)
 library(ggplot2)
-fitbit_data <- read.csv("https://query.data.world/s/d34odvfyobjvbe7xl3t5px2wigfigl", header=TRUE, stringsAsFactors=FALSE)
+#fitbit_data <-read.csv("https://www.kaggle.com/feraco/sleep-deprivation?select=demdata_160225_pseudonymized.csv")
+fitbit_data <- read.csv("~/_Code/final-project-starter-noah-rarick/data/Fitbit Experiment.csv")
 fitbit_ds1 <- fitbit_data[1:28,]
 fitbit_ds2 <- fitbit_data[36:64, 1:9]
 names(fitbit_ds2) <- fitbit_ds2[1,]
@@ -25,7 +26,7 @@ fitbit_ds2$`Time in Bed` <- as.numeric(fitbit_ds2$`Time in Bed`)
 
 render_sleep_quality <- function(input, output) {
   renderPlot(
-    ggplot() +
+  ggplot() +
       ggtitle("Relationship between Exercise (Calories Burnt) and Sleep Quality") +
       geom_line(aes(x = calories.burned, y = fitbit_ds2[, input$values], color = "Sleep"), size=1.5, 
                 data = fitbit_ds2, group = 1) +
@@ -34,7 +35,8 @@ render_sleep_quality <- function(input, output) {
       scale_y_continuous(breaks = seq(0,480,20)) +
       labs(x="Calories Burned (calories)", y="Minutes (mins)", title = "Minutes of Sleep Compared to Daily Calories Burnt") +
       scale_color_manual(name="Legend", values = c("Sleep" = "pink",
-                                                   "Time in Bed" = "darkblue"))
+                                                   "Time in Bed" = "darkblue")),
+  
   )
 }
 

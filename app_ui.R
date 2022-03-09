@@ -78,6 +78,10 @@ summary_page <- tabPanel(
   "Summary",
   includeHTML("summary.html")
 )
+index_page <- tabPanel(
+  "Report",
+  includeHTML(knitr::knit2html("~/_Code/final-project-starter-noah-rarick/docs/index.rmd", fragment.only = TRUE))
+)
 
 
 # UI
@@ -86,6 +90,7 @@ ui <- fluidPage('CO2 Consumption Worlwide', tabsetPanel(
               introduction_page,
               visualization_page,
               visualization_page_two,
-              summary_page
+              summary_page,
+              index_page,
   ))
 

@@ -5,9 +5,7 @@ date: "1/22/2022"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
+
 
 ###_Sleep_Project_
 
@@ -100,59 +98,97 @@ Woods, Heather Cleland, and Holly Scott. “#Sleepyteens: Social Media Use in Ad
 “Explore Scientific, Technical, and Medical Research on ScienceDirect.” ScienceDirect.com | Science, Health and Medical Journals, Full Text Articles and Books., https://www.sciencedirect.com/. 
 
 
-```{r project table, echo = FALSE}
-sleep_data <- read.csv("../data/sleepdata.csv")
-library("dplyr")
-library("knitr")
-sleep_table <- sleep_data %>%
-               select(AgeGroup, Sex, BMI1, HADS_Anxiety, HADS_Depression, KSQ_SleepQualityIndex) %>%
-               group_by(AgeGroup, Sex) %>%
-               summarize(avg_depression = mean(HADS_Depression),
-               avg_sleep_quality = mean(KSQ_SleepQualityIndex),
-               avg_anxiety = mean(HADS_Anxiety))
 
-sleep_table = sleep_table[-5,]
-sleep_table %>% mutate_at(vars(avg_depression, avg_sleep_quality, avg_anxiety), funs(round(., 2)))
-kable(sleep_table)
 ```
+## `summarise()` has grouped output by 'AgeGroup'. You can override using the `.groups` argument.
+```
+
+```
+## Warning: `funs()` was deprecated in dplyr 0.8.0.
+## Please use a list of either functions or lambdas: 
+## 
+##   # Simple named list: 
+##   list(mean = mean, median = median)
+## 
+##   # Auto named with `tibble::lst()`: 
+##   tibble::lst(mean, median)
+## 
+##   # Using lambdas
+##   list(~ mean(., trim = .2), ~ median(., na.rm = TRUE))
+## This warning is displayed once every 8 hours.
+## Call `lifecycle::last_lifecycle_warnings()` to see where this warning was generated.
+```
+
+```
+## # A tibble: 4 x 5
+## # Groups:   AgeGroup [2]
+##   AgeGroup Sex    avg_depression avg_sleep_quality avg_anxiety
+##   <chr>    <chr>           <dbl>             <dbl>       <dbl>
+## 1 Old      Female           1.05              5.11        1.68
+## 2 Old      Male             1.32              5.32        1.26
+## 3 Young    Female           1.08              5.25        2.92
+## 4 Young    Male             1.21              5.25        2.92
+```
+
+
+
+|AgeGroup |Sex    | avg_depression| avg_sleep_quality| avg_anxiety|
+|:--------|:------|--------------:|-----------------:|-----------:|
+|Old      |Female |       1.045454|          5.113636|    1.681818|
+|Old      |Male   |       1.315789|          5.315790|    1.263158|
+|Young    |Female |       1.083333|          5.250000|    2.916667|
+|Young    |Male   |       1.208333|          5.250000|    2.916667|
 
 ### **Table Summary**
 
 The table above displays several statistics extracted from our data set. Firstly, it was decided that the most important factors to group by were age range and sex. By doing this, we could average the depression, anxiety and sleep quality scores for each group. The most important observation to take away is that while the group old males had the highest sleep quality, they also had the highest depression scores. Additionally, while old females had the lowest sleep quality, they had the lowest depression scores.Both young males and females had the highest anxiety scores, much higher than that of old females who had worse sleep quality. From this chart, it is hard to draw a relationship between sleep quality and depression and anxiety scores. 
 
-```{r summary statistics, echo = FALSE}
-source("../source/summaryfunction.R")
-summary_info
+
+```
+## $average_sleep_quality
+## [1] 5.236111
+## 
+## $below_average_sleep_depression
+## [1] 1.485714
+## 
+## $above_average_sleep_depression
+## [1] 0.9454545
+## 
+## $below_average_sleep_anxiety
+## [1] 2.914286
+## 
+## $above_average_sleep_anxiety
+## [1] 1.909091
+## 
+## $young_depression
+## [1] 1.145833
+## 
+## $old_depression
+## [1] 1.170732
 ```
 ### **Statistic Summary**
 
 The above summary statistics help to quantify important relationships between sleep quality, depression and anxiety."Below average" and "above average" refers to whether or not the user was above or below the average sleep quality index. From this data it is much easier to draw a correlation between sleep quality and depression/anxiety. Participants with below average sleep quality had a HADS depression score of approximately 1.49, however participants with above average sleep quality had a HADS depression score of approximately .95. The same relationship can be seen in the HADS anxiety scores. Participants with below average sleep quality had a HADS anxiety score of 2.91, however participants with above average sleep quality had a HADS anxiety score of 1.90. From this data we can see that participants that had below average sleep quality also suffered from depression and anxiety at higher scores. The final two statistics I calculated was depression between the age ranges. I calculated the mean depression scores for those classified as young, coming out to 1.15. However, participants classified as old had a very similar average depression score of 1.17. From these statistics it seems as though sleep quality affected depression/anxiety much more than age.   
 
 ## Including Plots
-```{r chart 1, echo = FALSE}
-source("../source/Chart_1/Data_Visualization_1.R")
-library("ggplot2")
-ggplotly(sleep_depression_age_plot)
+
+```
+## Error in loadNamespace(name): there is no package called 'webshot'
 ```
 
 ### Chart 1 Summary:
 
 The implementation of the grouped dodged column bar chart data visualization is a means of illustrating the correlation between an individual’s sleep quality and reported level of depression. By grouping the data based on age group (Young versus Old versus NA), the data visualization showcases the deviation among the specified features. From the chart, we can see that as sleep quality diminishes (increases in value), young individuals are more prone to experiencing higher levels of depression, while depression levels remain fairly consistent across different sleep quality values for old individuals.
 
-```{r chart 2, echo = FALSE}
-source("../source/chart_2/Column_Chart-Sleep_Quality.R")
-library("ggplot2")
-g1
-```
+![plot of chunk chart 2](figure/chart 2-1.png)
 
 ### Chart 2 Summary:
 
 The implementation of the line chart data visualization is trying to prove the relationship between the amount of exercises and sleep quality. From the chart, we can see that when the daily calories start to increase, the minutes this person spent in deep sleep or regular sleep will be unstable. From my case, I don't see direct effects to sleep quality from increasing volume of doing exercises. But the minutes of deep sleep and minutes of staying asleep is proportional. From the side of this person, we can get a conclusion that the amount of exercises won't affect the person's sleep quality.
 
-```{r chart 3, echo = FALSE}
-source("../source/Chart_1/Data_Visualization_1.R")
-library("ggplot2")
-ggplotly(scatter)
+
+```
+## Error in loadNamespace(name): there is no package called 'webshot'
 ```
 
 ### Chart 3 Summary:
