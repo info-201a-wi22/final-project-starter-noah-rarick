@@ -1,5 +1,6 @@
 # a function that creates a list of summary statistics from the data set
-sleep_data <- read.csv("../data/sleepdata.csv")
+library(dplyr)
+sleep_data <- read.csv("https://raw.githubusercontent.com/info-201a-wi22/final-project-starter-noah-rarick/main/data/sleepdata.csv")
 library("dplyr")
 summary_info <- list()
 summary_info$average_sleep_quality <- mean(sleep_data$KSQ_SleepQualityIndex)
@@ -27,4 +28,6 @@ summary_info$old_depression <- sleep_data %>%
   filter(AgeGroup == "Old") %>%
   summarize(mean(HADS_Depression))
 summary_info$old_depression <- pull(summary_info$old_depression)
+names(summary_info) <- c("Average Sleep Quality", "Below Average Sleep Depression", "Above Average Sleep Depression","Above Average Sleep Anxiety",  "Below Average Sleep Anxiety", "Young Depression", "Old Depression")
 
+summary_info

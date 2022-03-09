@@ -9,7 +9,7 @@ library(lintr)
 library(styler)
 library(ggplot2)
 #fitbit_data <-read.csv("https://www.kaggle.com/feraco/sleep-deprivation?select=demdata_160225_pseudonymized.csv")
-fitbit_data <- read.csv("~/_Code/final-project-starter-noah-rarick/data/Fitbit Experiment.csv")
+fitbit_data <- read.csv("https://raw.githubusercontent.com/info-201a-wi22/final-project-starter-noah-rarick/main/data/Fitbit%20Experiment.csv")
 fitbit_ds1 <- fitbit_data[1:28,]
 fitbit_ds2 <- fitbit_data[36:64, 1:9]
 names(fitbit_ds2) <- fitbit_ds2[1,]

@@ -4,7 +4,6 @@ library(ggplot2)
 library(tidyverse)
 library(lintr)
 library(styler)
-install.packages("evaluate")
 library(evaluate)
 
 # source both ui and server
