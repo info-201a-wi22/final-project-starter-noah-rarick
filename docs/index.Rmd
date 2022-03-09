@@ -1,6 +1,6 @@
 ---
 title: "Sleep Project"
-author: "Noah Rarick, Vincent Chen, Qiyuan Pan, Wenyu Jiao"
+author: "Noah Rarick,Qiyuan Pan, Wenyu Jiao"
 date: "1/22/2022"
 output: html_document
 ---
