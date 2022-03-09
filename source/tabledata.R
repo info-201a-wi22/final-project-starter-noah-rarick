@@ -1,4 +1,4 @@
-sleep_data <- read.csv("data/sleepdata.csv")
+sleep_data <- read.csv("https://raw.githubusercontent.com/info-201a-wi22/final-project-starter-noah-rarick/main/data/sleepdata.csv")
 View(sleep_data)
 library("dplyr")
 sleep_table <- sleep_data %>%
@@ -9,7 +9,6 @@ sleep_table <- sleep_data %>%
                avg_anxiety = mean(HADS_Anxiety))
 sleep_table = sleep_table[-5,]
                
-               
-View(sleep_table)
+names(sleep_table) <- c("Age Group", "Sex", "Average Depression", "Average Sleep Quality", "Average Anxiety")
                                                                                                                            
 
