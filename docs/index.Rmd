@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-###**_Sleep_Project_**
+### *_Sleep_Project_*
 
 ### *Title*
 Analyzing the relationship between reported sleep quality and levels of depression, anxiety and participant health data.
@@ -28,8 +28,8 @@ Analyzing the relationship between reported sleep quality and levels of depressi
 ### **Abstract**
 How does an individual’s sleep quality effect their mental wellbeing regarding anxiety and depression levels? To address the question, we will compare the reported levels of anxiety and depression to reported sleep quality to see if there is a correlation between these factors. This is important because sleep is often overlooked by students as a possible factor in the depression and anxiety that students are facing at increasing levels.
 
-.
-### **Keywords** 
+
+### *Keywords*
 - *Human physiology*
 - *Sleep quality*
 - *Depression and anxiety*
@@ -101,7 +101,7 @@ Woods, Heather Cleland, and Holly Scott. “#Sleepyteens: Social Media Use in Ad
 “Explore Scientific, Technical, and Medical Research on ScienceDirect.” ScienceDirect.com | Science, Health and Medical Journals, Full Text Articles and Books., https://www.sciencedirect.com/. 
 
 
-```{r project table, echo = FALSE}
+```{r project table, echo = FALSE, warning=FALSE, message=FALSE}
 sleep_data <- read.csv("../data/sleepdata.csv")
 library("dplyr")
 library("knitr")
@@ -113,8 +113,9 @@ sleep_table <- sleep_data %>%
                avg_anxiety = mean(HADS_Anxiety))
 
 sleep_table = sleep_table[-5,]
-sleep_table %>% mutate_at(vars(avg_depression, avg_sleep_quality, avg_anxiety), funs(round(., 2)))
-kable(sleep_table)
+# sleep_table %>% mutate_at(vars(avg_depression, avg_sleep_quality, avg_anxiety), funs(round(., 2)))
+table <- kable(sleep_table)
+table
 ```
 
 ### **Table Summary**
@@ -153,12 +154,9 @@ The implementation of the line chart data visualization is trying to prove the r
 ```{r chart 3, echo = FALSE}
 source("../source/chart_3/chart_final.R")
 library("ggplot2")
-ggplotly(scatter)
+hist
 ```
 
 ### Chart 3 Summary:
 
 This graph is about the show the relationship between people's sleeping quality and they anxiety they have. The graph is a scatter plot and will show how each point which representing a different age group are displayed.The age group are young, old and NA.So people can see how the old and young people's sleep quality data will be affected by their anxiety point. The graph has reveal that young people are more likely to be affected by anxiety level since they will have a larger range and spread out in the graph. The young people is are more likely to appear at the high level of anxiety and high sleep quality index while the old people is more likely to appear at low level for both level. 
-
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
